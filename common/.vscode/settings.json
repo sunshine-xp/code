@@ -1,5 +1,9 @@
 {
     "files.associations": {
         "hash_map": "cpp"
-    }
+    },
+    "code-runner.showRunIconInEditorTitleMenu": true,
+    "code-runner.showRunCommandInExplorerContextMenu": false,
+    "code-runner.showRunCommandInEditorContextMenu": false,
+    "code-runner.showExecutionMessage": false
 }

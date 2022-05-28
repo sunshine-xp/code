@@ -1,0 +1,17 @@
+{
+    "C_Cpp.autocompleteAddParentheses": true,
+    "cmake.clearOutputBeforeBuild": false,
+    "C_Cpp.vcFormat.space.withinSquareBrackets": true,
+    "C_Cpp.vcFormat.space.withinParameterListParentheses": true,
+    "C_Cpp.vcFormat.space.withinLambdaBrackets": true,
+    "C_Cpp.vcFormat.space.withinExpressionParentheses": true,
+    "C_Cpp.vcFormat.space.withinControlFlowStatementParentheses": true,
+    "cmake.statusbar.visibility": "icon",
+    "code-runner.showExecutionMessage": false,
+    "code-runner.showRunCommandInExplorerContextMenu": false,
+    "code-runner.showRunIconInEditorTitleMenu": false,
+    "code-runner.showStopIconInEditorTitleMenu": false,
+    "files.associations": {
+        "ostream": "cpp"
+    }
+}
