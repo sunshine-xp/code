@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+      <script src="./jquery-3.6.0.js"></script>
+      <script language="javascript">
+          $(document).ready(function(){
+            $("#myBtn").click(function(){
+              var myCanvas = document.getElementById("myCanvas");
+              var myContext = myCanvas.getContext('2D');
+              myContext.font = '宋体';
+              var myHeight = 0;
+              myContext.fillStyle = 'black';
+              myContext.fillRect(0,myHeight,410,130);
+              for(var i = 0;i<10;i++) {
+                  myContext.shadowColor = "rgba(255,255,255,"+((10-i)/10)+")";
+
+                  myContext.shadowOffsetX = i*2;
+                  myContext.shadowOffsetY = i*2;
+
+                  myContext.shadowBlur = i*2;
+                  myContext.fillStyle = "rgba(127,127,127,1)";
+                  myContext.fillText("炫酷示例集锦",40,80+myHeight);
+              }
+            });
+          });
+    </script>
+      <title></title>
+    </head>
+    <body>
+      <p>
+        <input type="button" value="画布上创建向上3D拉影的特效文字"
+        id="myBtn" style="width:410px">
+      </p>
+      <canvas id="myCanvas" width="410" height="130"></canvas>
+
+    </body>
+</html>
