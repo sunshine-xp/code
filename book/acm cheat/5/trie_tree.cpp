@@ -60,4 +60,10 @@ bool trie_tree_insert(trie_tree_t *tree, char *word)
         if(p->is_tail) return false;
         word++;
     }
+    p->is_tail = true;
+
+    for(i = 0;i < CHAR_COUNT; i++)
+        if(p->next[i] != NULL)
+            return false;
+    return true;
 }
