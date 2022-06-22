@@ -57,5 +57,12 @@
         "typeinfo": "cpp",
         "valarray": "cpp"
     },
-    "editor.guides.bracketPairs": true
+    "editor.guides.bracketPairs": true,
+    "workbench.colorCustomizations": {
+        "[Atom One Light]": {
+            "editor.background": "#C7EDCC",
+            "sideBar.background": "#C7EDCC",
+            "activityBar.background": "#C7EDCC",
+        },
+    }
 }
