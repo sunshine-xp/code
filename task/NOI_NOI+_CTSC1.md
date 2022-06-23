@@ -7276,4 +7276,4 @@ P8409 [COCI 2009-2010 #5] CHUCK 暂无评定
 P8410 「SvR-1」Don't Mozheng. /oh 入门
 P8411 「SvR-1」Problem 树形结构 普及/提高-
 P8412 「SvR-1」Hack Function! 扩展欧几里德,扩欧 提高+/省选-
-
+P8413	「SvR-1」Five of Pentacles	动态规划,dp线段树树状数组提高+/省选-	
