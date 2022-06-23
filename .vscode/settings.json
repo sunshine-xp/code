@@ -55,7 +55,8 @@
         "utility": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "random": "cpp"
     },
     "editor.guides.bracketPairs": true,
     "workbench.colorCustomizations": {
