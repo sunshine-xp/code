@@ -64,5 +64,6 @@
             "sideBar.background": "#C7EDCC",
             "activityBar.background": "#C7EDCC",
         },
-    }
+    },
+    "luogu.defaultProblemSet": "洛谷题库"
 }
