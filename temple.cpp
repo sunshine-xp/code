@@ -5,12 +5,10 @@
 
 typedef long long LL;
 using namespace std;
-
+//freopen("input.txt","r",stdin);
+//freopen("output.txt","w",stdout);
 int main()
 {
-
-
-
-
+    
     return 0;
 }
