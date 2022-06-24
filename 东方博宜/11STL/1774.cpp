@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
 
 #define fa(i,a,b) for(int (i) = (a);i < (b);(i)++)
 #define fm(i,a,b) for(int (i) = (a);i > (b);(i)--)
@@ -9,6 +10,7 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
+    vector<int> v;
     
     return 0;
 }

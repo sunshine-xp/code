@@ -46,9 +46,19 @@
 // @lc code=start
 class Solution {
 public:
-    string longestPalindrome(string s) {
-
+    bool isPal(string s,int i,int j) {
+        string r = s.substr(i,j-i+1);
+        r.reverse(r.begin(),r.end());
+        if(r == s) return true;
+        else return false;
     }
+    string longestPalindrome(string s) {
+        int ans = 1;
+        for(int i = 0;i<s.size();i++)
+        for(int j = 0;j<s.size();j++)
+            if(isPal(s,i,j) && j-i>ans) return s.substr(i,j-i+1);
+    }
+    
 };
 // @lc code=end
 
