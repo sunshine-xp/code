@@ -7,13 +7,18 @@ typedef long long LL;
 using namespace std;
 //freopen("input.txt","r",stdin);
 //freopen("output.txt","w",stdout);
+
 int main()
 {
-    
+    int n;
+    cin>>n;
+    char arr[n+1];
+    fa(i,0,n) cin>>arr[i];
+    arr[n] = '\0';
+    sort(arr,arr+n);
+    string s = arr;
+    int m = s.find_first_not_of('0');
+    swap(s[0],s[m]);
+    cout<<s<<"\n";
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
 }

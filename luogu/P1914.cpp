@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 #define fa(i,a,b) for(int (i) = (a);i < (b);(i)++)
-#define fm(i,a,b) for(int (i) = (a);i >= (b);(i)--)
+#define fm(i,a,b) for(int (i) = (a);i > (b);(i)--)
 
 typedef long long LL;
 using namespace std;
@@ -9,11 +9,11 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
-    return 0;
-}
+    int n;
+    string s;
+    cin>>n>>s;
+    fa(i,0,s.size()) s[i] = (s[i] - 'a' + n)%26 + 'a';
+    cout<<s<<endl;
 
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
+    return 0;
 }

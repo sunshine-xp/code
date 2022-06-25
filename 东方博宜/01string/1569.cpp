@@ -9,11 +9,9 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
+    string s;
+    cin>>s;
+    fm(i,s.size()-1,0) if(isupper(s[i]))cout<<s[i];
+    fa(i,0,s.size()) if(islower(s[i]))cout<<s[i];
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
 }

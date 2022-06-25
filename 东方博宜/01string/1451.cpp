@@ -7,13 +7,18 @@ typedef long long LL;
 using namespace std;
 //freopen("input.txt","r",stdin);
 //freopen("output.txt","w",stdout);
-int main()
-{
-    
-    return 0;
-}
-
 bool cmp(char a,char b){
     if(a > b) return true;
     else return false;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    char arr[n];
+    fa(i,0,n) cin>>arr[i];
+    sort(arr,arr+n,cmp);
+    fa(i,0,n)cout<<arr[i];
+    cout<<"\n";
+    return 0;
 }

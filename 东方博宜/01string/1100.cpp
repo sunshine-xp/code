@@ -9,11 +9,8 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
+    string s,r;
+    while(cin>>s) r += toupper(s[0]);
+    cout<<r<<endl;
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
 }

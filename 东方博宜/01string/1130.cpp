@@ -9,11 +9,12 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
+    string s,s1,s2;
+    cin>>s;
+    int m = s.find('+');
+    s1 = s.substr(0,m);
+    s2 = s.substr(m+1,s.size()-2);
+    int a = stoi(s1);
+    int b = stoi(s2);
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
 }

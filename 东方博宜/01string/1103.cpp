@@ -9,11 +9,12 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
+    char c,p;
+    while(cin>>c){
+        int count = 0;
+        
+
+    }
     
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
 }
