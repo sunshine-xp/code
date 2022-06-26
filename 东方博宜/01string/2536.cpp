@@ -9,19 +9,19 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
+    int n;
+    cin>>n;
+    string s;
+    cin>>s;
+    int arr[256];
+    memset(arr,0,sizeof(arr));
+    fa(i,0,s.size()) {
+        arr[s[i]-0]++;
+        if( arr[s[i]-0]>=n) {
+            cout<<s[i]<<endl;
+            return 0;
+        }
+    }
+    cout<<"No"<<endl;
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
-}
-bool cmp(int a,int b){
-    if(a > b) return true;
-    else return false;
-}
-bool cmp(string a,string b){
-    if(a+b>a+b) return true;
-    else return false;
 }

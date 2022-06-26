@@ -9,19 +9,13 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
-    return 0;
-}
+    int n;
+    cin>>n;
+    string s,t;
+    cin>>s>>t;
+    int b = 0;
+    fa(i,0,t.size()) {
 
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
-}
-bool cmp(int a,int b){
-    if(a > b) return true;
-    else return false;
-}
-bool cmp(string a,string b){
-    if(a+b>a+b) return true;
-    else return false;
+    }
+    return 0;
 }

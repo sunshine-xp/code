@@ -9,19 +9,9 @@ using namespace std;
 //freopen("output.txt","w",stdout);
 int main()
 {
-    
+    int n,r;
+    cin>>n>>r;
+    int arr[n];
+    fa(i,0,n)cin>>arr[i];
     return 0;
-}
-
-bool cmp(char a,char b){
-    if(a > b) return true;
-    else return false;
-}
-bool cmp(int a,int b){
-    if(a > b) return true;
-    else return false;
-}
-bool cmp(string a,string b){
-    if(a+b>a+b) return true;
-    else return false;
 }

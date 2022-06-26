@@ -26,5 +26,26 @@ sort(start,end+1)地址
 reverse(start,end+1)地址
 swap(a,b)
 
-
+//最大公约数
+int gys(int a,int b) {
+    int t;
+    while(a%b!=0) {
+        t = a%b;
+        a = b;
+        b =t;
+    }
+    return b;
+}
+bool cmp(char a,char b){
+    if(a > b) return true;
+    else return false;
+}
+bool cmp(int a,int b){
+    if(a > b) return true;
+    else return false;
+}
+bool cmp(string a,string b){
+    if(a+b>a+b) return true;
+    else return false;
+}
 
