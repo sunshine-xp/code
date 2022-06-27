@@ -10,19 +10,19 @@ using namespace std;
 int main()
 {
     string s;
-    cin>>s;
-    s += '1';
-    int num = 1;
-    char prep = s[0];
-    fa(i,1,s.size()) {
-        if(s[i] == prep) num++;
+    getline(cin,s);
+    bool f = false;
+    fa(i,0,s.size()) {
+        if(isdigit(s[i])) {
+            cout<<s[i];
+            f = false;
+        }
         else {
-            if(num == 1) cout<<prep;
+            if(f)continue;
             else {
-                cout<<num<<prep;
+                cout<<"*";
+                f = true;
             }
-            prep = s[i];
-            num = 1;
         }
     }
     

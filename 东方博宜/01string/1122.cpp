@@ -11,20 +11,16 @@ int main()
 {
     string s;
     cin>>s;
-    s += '1';
-    int num = 1;
-    char prep = s[0];
-    fa(i,1,s.size()) {
-        if(s[i] == prep) num++;
-        else {
-            if(num == 1) cout<<prep;
-            else {
-                cout<<num<<prep;
-            }
-            prep = s[i];
-            num = 1;
-        }
+    int ans = 0;
+    char op = '+';
+    fa(i,0,s.size()) {
+        if(isdigit(s[i])) {
+            if(op == '+') ans += s[i]-'0';
+            else if(op == '-') ans -= s[i]-'0';
+            else if(op == '*') ans *= s[i] -'0';
+        }else op = s[i];
     }
+    cout<<ans<<endl;
     
     return 0;
 }
