@@ -26,15 +26,15 @@ bool dfs(int i,int j) {
                 
             }else if(arr[x][y] == 4) {
                 t++;
-                pre = 6;
+               // pre = 6;
                 dfs(x,y);
             }
         }
             
     }
-        ans = max(ans,pre);
+        //ans = max(ans,pre);
         visited[i][j] = false; 
-        pre -= arr[i][j]; 
+        //pre -= arr[i][j]; 
 }
 
 int main()

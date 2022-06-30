@@ -2,7 +2,7 @@
 
 #define fa(i,a,b) for(int (i) = (a);i < (b);(i)++)
 #define fm(i,a,b) for(int (i) = (a);i >= (b);(i)--)
-
+#define cout1(a) cout<<"---"<<(a)<<endl;
 typedef long long LL;
 using namespace std;
 //freopen("input.txt","r",stdin);
