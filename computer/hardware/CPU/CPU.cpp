@@ -13,3 +13,9 @@ CPU::CPU()
 CPU::~CPU()
 {
 }
+void CPU::addi(REG &R1,REG &R2,REG &RR3) {
+    RR3 = R1+R2;
+}
+void sub(REG &R1,REG &R2,REG &RR3) {
+
+}
