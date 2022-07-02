@@ -57,7 +57,8 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "random": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "bfs": "cpp"
     },
     "editor.guides.bracketPairs": true,
     "workbench.colorCustomizations": {
