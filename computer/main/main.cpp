@@ -1,12 +1,12 @@
 #include"main.hpp"
-#include<iostream>
+#include<bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-    CPU* cpu = new CPU();
-    DISK * disk = new DISK();
     MEM * mem = new MEM();
+    
+    CPU* cpu = new CPU(*mem);
 }
  

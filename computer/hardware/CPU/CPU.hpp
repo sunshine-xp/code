@@ -15,7 +15,7 @@ class CPU
 {
     private:
         //段寄存器 标记代码、数据、栈空间的内存块
-        REG CS;
+        REG CS;//
         REG DS;
         REG SS;
         REG ES;
@@ -61,21 +61,12 @@ class CPU
          * 
          */
     public:
-        CPU();
-        void addi(REG &R1,REG &R2,REG &RR3);
-        void faddi(REG &R1,REG &R2,REG &RR3);
-        void addf(REG &R1,REG &R2,REG &RR3);
-        void faddf(REG &R1,REG &R2,REG &RR3);
-        void subi(REG &R1,REG &R2,REG &RR3);
-        void fsubi(REG &R1,REG &R2,REG &RR3);
-        void subf(REG &R1,REG &R2,REG &RR3);
-        void fsubf(REG &R1,REG &R2,REG &RR3);
-        void muli(REG &R1,REG &R2,REG &RR3);
-        void fmuli(REG &R1,REG &R2,REG &RR3);
-        void mulf(REG &R1,REG &R2,REG &RR3);
-        void fmulf(REG &R1,REG &R2,REG &RR3);
-        void divi(REG &R1,REG &R2,REG &RR3);
-        void fdivi(REG &R1,REG &R2,REG &RR3);
-        void ret();
+        CPU(MEM &mem);
+        void run();
         ~CPU();
 };
+
+/**
+ * 0X01 INT
+ * 
+ */
