@@ -1,15 +1,5 @@
 #include<iostream>
 using namespace std;
-#define ADD OX01
-#define MUL 0x02
-#define SUB 0X03
-#define DIV 0X04
-#define FADD OX05
-#define FMUL 0x06
-#define FSUB 0X07
-#define FDIV 0X08
-#define LOAD 0X09
-#define RET 0X0A
 typedef unsigned int  REG;
 class CPU
 {
@@ -55,7 +45,7 @@ class CPU
          * 17 虚拟8086模式 VM
          * 18 对齐检查 AC
          * 19 虚拟中断标志 VIF
-         * 20 虚拟中断悬而未决 VIP
+         * 20 虚拟中断悬而未决 VIP  
          * 21 ID标志 ID
          * 22-31 保留
          * 

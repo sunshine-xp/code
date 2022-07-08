@@ -1,10 +1,10 @@
-#define MEMORYSIZE 1024*1024*16
+#define MEMORYSIZE 1024*1024*64
 class MEM
 {
     public:
         unsigned int addrin;
         unsigned int dataout;
-        unsigned int mem[MEMORYSIZE];
+        unsigned char mem[MEMORYSIZE];
     public:
         MEM();
         ~MEM();
