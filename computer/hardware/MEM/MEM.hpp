@@ -7,5 +7,7 @@ class MEM
         unsigned char mem[MEMORYSIZE];
     public:
         MEM();
+        unsigned int getData();
+        void setData();
         ~MEM();
 };
